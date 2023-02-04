@@ -42,6 +42,7 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
     aliases
+    you-should-use
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -66,7 +67,21 @@ alias cls="clear" # The only point where I think Windows is better
 
 # Custom commands
 
-# enhanced cd command with integrated search
+# Enhanced cd command with integrated search
 fcd() { 
     cd "$(find -type d | fzf)"
 }
+
+# Command to search a file and open it with vim
+fvim() {
+    vim "$(find -type f | fzf)"
+}
+
+# Enhanced rm -rf command with integrated search
+frm() {
+    rm -rf "$(find -type d | fzf)"
+}
+
+# GPG Key
+export GPG_TTY=$(tty)
+
