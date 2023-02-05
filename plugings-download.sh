@@ -3,6 +3,12 @@
 # I download this file to quickly configure my development containers #
 # ------------------------------------------------------------------- #
 
+# Oh-My-Zsh Plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-npm install -g @bitwarden/cli
+
+# Vim Plugins 
+
+mkdir -p ~/.vim/pack/plugins/start
+git clone https://github.com/prettier/vim-prettier ~/.vim/pack/plugins/start/vim-prettier
+

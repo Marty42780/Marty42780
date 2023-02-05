@@ -79,8 +79,9 @@ fvim() {
 
 # Enhanced rm -rf command with integrated search
 frm() {
-    rm -rf "$(find -type d | fzf)"
+    rm -rf "$(find | fzf)"
 }
 
 # GPG Key
 export GPG_TTY=$(tty)
+

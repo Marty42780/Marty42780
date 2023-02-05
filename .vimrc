@@ -5,11 +5,14 @@
 
 :set number
 
+packloadall
+
 call plug#begin()
 
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
+Plug 'prettier/vim-prettier'
 
 call plug#end()
 
