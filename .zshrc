@@ -84,4 +84,3 @@ frm() {
 
 # GPG Key
 export GPG_TTY=$(tty)
-
