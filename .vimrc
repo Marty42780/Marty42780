@@ -5,6 +5,9 @@
 
 :set number
 
+autocmd Filetype html,css setlocal tabstop=2
+autocmd Filetype py,js setlocal tabstop=4
+
 packloadall
 
 call plug#begin()
