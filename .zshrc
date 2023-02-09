@@ -38,17 +38,16 @@ ZSH_THEME="robbyrussell"
 plugins=(
     git
     history
-    web-search
+    ssh-agent
     zsh-autosuggestions
     zsh-syntax-highlighting
     aliases
     you-should-use
 )
 
-source $ZSH/oh-my-zsh.sh
+zstyle :omz:plugins:ssh-agent identities rsa_github_dma_key 
 
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
+source $ZSH/oh-my-zsh.sh
 
 #User configuration
 
