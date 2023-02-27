@@ -68,12 +68,12 @@ alias cls="clear" # The only point where I think Windows is better
 
 # Enhanced cd command with integrated search
 fcd() { 
-    cd "$(find -type d | fzf)"
+    cd "$(find -type d | grep -Ev '.git|.cache|.node_modules|lib' | fzf)" 
 }
 
 # Command to search a file and open it with vim
 fvim() {
-    vim "$(find -type f | fzf)"
+    vim "$(find -type f | grep -Ev '.git|.cache|.node_modules|lib' | fzf)"
 }
 
 # Enhanced rm -rf command with integrated search

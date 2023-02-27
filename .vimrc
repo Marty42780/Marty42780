@@ -3,12 +3,7 @@
 " I download this file to quickly configure my development containers "
 " ------------------------------------------------------------------- "
 
-:set number
-
-autocmd Filetype html,css setlocal tabstop=2
-autocmd Filetype py,js setlocal tabstop=4
-
-packloadall
+" Plugins
 
 call plug#begin()
 
@@ -18,4 +13,18 @@ Plug 'scrooloose/nerdtree'
 Plug 'prettier/vim-prettier'
 
 call plug#end()
+
+" Basic Settings
+
+set number
+set tabstop=4
+autocmd Filetype html,css setlocal tabstop=2
+
+" NERDTree
+
+autocmd VimEnter * NERDTree | wincmd p
+nmap <C-f> :NERDTreeToggle<CR>
+autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
+packloadall
 
