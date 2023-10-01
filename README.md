@@ -1,9 +1,6 @@
-**👋 Hello, I'm Marty42**
-- 🌍 Based in France
-- 👀 I'm interested in Web development, Python, Docker, ...
-- 🌱 I am currently in high school ("Terminale" ≈ 12th Grade in the US with Maths + IT specialties)
-- 📫 My Discord : `Marty42#7856`
+**👋 Hello, I'm Martin Pasquier**
+- 🌍 I live in Paris, France
+- 🎓 First-year student at EPITA Paris
+- ⛷️ Insterested in Web dev, C#, Python, Server, Open-source, ...
+- 📫 Reach me on Discord: `marty42`
 
-<a href="https://github.com/Marty42780">
-  <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Marty42780&layout=compact&count_private=true">
-</a>
